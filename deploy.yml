@@ -35,3 +35,6 @@
         image: httpd
         ports:
           - "80:80"
+        volumes:
+          - /home/admin/index.html:/user/local/apache2/htdocs/index.html
+          
