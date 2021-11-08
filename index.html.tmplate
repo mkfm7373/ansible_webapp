@@ -5,7 +5,7 @@
 <body>
   </br>
   </br>
-     Bonjour sur le Host : {{ ansible_host }}
+     Bonjour sur le Host : {{ ansible_hostname }}
   </br>
   </br>
   
