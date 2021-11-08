@@ -1,0 +1,13 @@
+<html>
+<head>
+  <title>TP 6 Ansible : Template file </title>
+</head>
+<body>
+  </br>
+  </br>
+     Bonjour sur le Host : {{ ansible_host }}
+  </br>
+  </br>
+  
+</body>
+</html>
