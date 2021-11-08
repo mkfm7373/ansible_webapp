@@ -2,9 +2,7 @@
 - name: "Apache installation using docker"
   hosts: Prod
   become: true
-  vars:
-    ansible_sudo_pass: admin  # fournir a ansible le password de sudo . il est possible de le confiurer(ansible.cfg) pour qu'il le demande en ligne de commande au lancment du playbook
-
+  
   pre_tasks:
     - name: Install EPEL repo
       package: name=epel-release state=present
