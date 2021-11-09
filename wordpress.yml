@@ -1,0 +1,12 @@
+---
+- hosts: prod
+  becomme: true
+  vars:
+    system_user: admin
+  vars_files:
+    - files/secrets/credentials.yml
+  pre_tasks:
+    - name: crete www-data
+      user: name=www-data state=present
+  roles:
+    - { role: ansible-role-containerized-wordpress }
